@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfoliopieces",
+  "info": {
+    "singularName": "portfoliopiece",
+    "pluralName": "portfoliopieces",
+    "displayName": "portfoliopiece",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "techstack": {
+      "type": "json",
+      "required": true
+    },
+    "livesite": {
+      "type": "string",
+      "required": true
+    },
+    "repo": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "figma": {
+      "type": "string",
+      "required": false
+    }
+  }
+}
